@@ -19,8 +19,10 @@ namespace Test3
 
             Assert.AreEqual(note, deletedNote);
 
+            Thread.Sleep(5000);
             app.Navigate.OpenMenu();
             app.Navigate.OpenAllNotes();
+            Thread.Sleep(5000);
         }
     }
 }

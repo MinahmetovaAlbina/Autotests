@@ -28,18 +28,19 @@ namespace Test3
             driver.FindElement(By.CssSelector(".search-bar > span:nth-child(1) > .icon-button")).Click();
         }
 
-        public void OpenAllNotes()
-        {
-            driver.FindElement(By.CssSelector(".navigation-bar-item:nth-child(0) > .button")).Click();
-        }
-
         public void OpenSettings()
         {
             driver.FindElement(By.CssSelector(".navigation-bar-item:nth-child(1) > .button")).Click();
         }
+
         public void OpenTrash()
         {
             driver.FindElement(By.CssSelector(".navigation-bar-item:nth-child(2) > .button")).Click();
+        }
+
+        public void OpenAllNotes()
+        {
+            driver.FindElement(By.CssSelector(".navigation-bar-item:nth-child(3) > .button")).Click();
         }
 
         public void CloseSettings()
